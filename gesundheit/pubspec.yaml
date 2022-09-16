@@ -10,6 +10,10 @@ dependencies:
     sdk: flutter
   creator: ^0.2.0
   cupertino_icons: ^1.0.5
+  fhir: ^0.9.0
+  fhir_at_rest: ^0.9.0
+  fhir_auth: ^0.9.0-1
+
   freezed_annotation: ^2.1.0
   get_it: ^7.2.0
   google_fonts: ^3.0.1
