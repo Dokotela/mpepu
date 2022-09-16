@@ -1,4 +1,4 @@
-package dev.fhirfli.mpepu
+package dev.fhirfli.gesundheit
 
 import io.flutter.embedding.android.FlutterActivity
 
