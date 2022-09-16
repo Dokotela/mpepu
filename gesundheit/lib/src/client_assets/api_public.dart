@@ -3,10 +3,10 @@
 
 import 'package:get_it/get_it.dart';
 
-import 'client_attributes.dart';
+import 'client_assets.dart';
 
 final _getIt = GetIt.instance;
-final clientAssets = _getIt<ClientAttributes>();
+final clientAssets = _getIt<ClientAssets>();
 
 final _clientApis = clientAssets.clientApis;
 
