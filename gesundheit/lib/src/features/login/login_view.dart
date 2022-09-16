@@ -9,15 +9,16 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-          body: FlutterLogin(
-        title: clientAssets.clientApis.clientAppTitle,
-        logo: AssetImage(clientAssets.clientImages.logo),
-        onLogin: (_) => null,
-        onSignup: (_) => null,
-        onSubmitAnimationCompleted: () {},
-        onRecoverPassword: (_) => null,
-      )),
+      home: SafeArea(
+        child: Scaffold(
+            body: FlutterLogin(
+          title: clientAssets.clientApis.clientAppTitle,
+          logo: AssetImage(clientAssets.clientImages.logo),
+          onLogin: (_) => null,
+          onSubmitAnimationCompleted: () {},
+          onRecoverPassword: (_) => null,
+        )),
+      ),
     );
   }
 }

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'client_apis.dart';
 import 'client_color_scheme.dart';
 import 'client_images.dart';
+import 'client_links.dart';
 
 class ClientAssets {
   ClientAssets({
@@ -11,6 +12,7 @@ class ClientAssets {
     required this.clientColorSchemeLight,
     required this.clientTextTheme,
     required this.clientImages,
+    required this.clientLinks,
     required this.scaffoldKey,
   });
 
@@ -22,6 +24,7 @@ class ClientAssets {
   final ClientColorScheme clientColorSchemeLight;
   final TextTheme clientTextTheme;
   final ClientImages clientImages;
+  final ClientLinks clientLinks;
 
   final GlobalKey<ScaffoldMessengerState> scaffoldKey;
 }

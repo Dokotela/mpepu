@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gesundheit/src/client_assets/client_images.dart';
 
 import '../gesundheit.dart';
 import 'client_apis.dart';
@@ -12,6 +11,7 @@ final customClientAssets = ClientAssets(
   clientColorSchemeLight: clientColorSchemeLight,
   clientTextTheme: clientTextTheme,
   clientImages: clientImages,
+  clientLinks: clientLinks,
   scaffoldKey: GlobalKey<ScaffoldMessengerState>(),
 );
 
@@ -31,4 +31,10 @@ const clientApis = ClientApis(
 
 const clientImages = ClientImages(
   logo: 'assets/mpepu_logo.png',
+);
+
+const clientLinks = ClientLinks(
+  appStoreAndroid: 'https://www.ub.bw/',
+  appStoreIos: 'https://www.ub.bw/',
+  appStoreUndefined: 'https://www.ub.bw/',
 );
