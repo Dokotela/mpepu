@@ -7,7 +7,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 
 import '../../gesundheit.dart';
 
-final clientThemeCreator = Creator((ref) => ClientThemeState.initial);
+final clientThemeCreator = Creator((ref) => ClientThemeState.initial());
 
 final themeEventsCreator = Emitter.arg1<bool, ClientThemeEvents>((ref,
         ClientThemeEvents events, emit) async =>
@@ -43,7 +43,6 @@ final themeEventsCreator = Emitter.arg1<bool, ClientThemeEvents>((ref,
             clientThemeCreator,
             ref
                 .read(clientThemeCreator)
-                .call()
                 .copyWith(isFirstLoad: (data as SPInteractionSetBool).value));
         return true;
       },
@@ -53,7 +52,6 @@ final themeEventsCreator = Emitter.arg1<bool, ClientThemeEvents>((ref,
             clientThemeCreator,
             ref
                 .read(clientThemeCreator)
-                .call()
                 .copyWith(versionNumber: packageInfo.version));
         return true;
       },
@@ -70,7 +68,7 @@ void _getNewThemeAndSaveState(Ref ref, ThemeMode newThemeMode) {
   // trigger a state change
   ref.set(
       clientThemeCreator,
-      ref.read(clientThemeCreator).call().copyWith(
+      ref.read(clientThemeCreator).copyWith(
             data: newClientTheme,
             clientColorScheme: newClientColorScheme,
             isDark: newIsDark,

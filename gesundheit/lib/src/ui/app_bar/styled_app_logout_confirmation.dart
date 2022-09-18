@@ -14,7 +14,7 @@ Future<bool> styledAppLogoutConfirmation(BuildContext context) async {
     barrierDismissible: true,
     builder: (BuildContext context) => Watcher(
       (BuildContext context, Ref ref, Widget? child) {
-        final theme = ref.watch(clientThemeCreator).call();
+        final theme = ref.watch(clientThemeCreator);
         return AlertDialog(
           title: const Text('Logout'),
           content: const Text('Are you sure you want to logout'),

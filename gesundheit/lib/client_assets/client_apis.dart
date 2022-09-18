@@ -23,7 +23,7 @@ const stageId = 'stage';
 const prodId = 'prod';
 
 /// The client name (computer readable)
-const clientAppName = 'gesundheit';
+const clientAppName = 'mpepu';
 
 /// The client (App) name (human readable)
-const clientAppTitle = 'Gesundheit!';
+const clientAppTitle = 'Mpepu';

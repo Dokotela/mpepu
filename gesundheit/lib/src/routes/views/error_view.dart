@@ -2,6 +2,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ErrorView extends StatelessWidget {
   const ErrorView(this.error, {Key? key}) : super(key: key);
@@ -10,16 +11,25 @@ class ErrorView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(leading: const Text('Uh-Oh!')),
-      body: Column(
-        children: [
-          Text(
-            errorMessages[Random().nextInt(errorMessages.length - 1)],
-            style: const TextStyle(fontSize: 40),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(leading: const Text('Uh-Oh!')),
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Center(
+            child: Column(
+              children: [
+                Text(
+                  errorMessages[Random().nextInt(errorMessages.length - 1)],
+                  style: const TextStyle(fontSize: 40),
+                  textAlign: TextAlign.center,
+                ),
+                const Gap(36),
+                Text('Error: $error'),
+              ],
+            ),
           ),
-          Text('Error: $error'),
-        ],
+        ),
       ),
     );
   }

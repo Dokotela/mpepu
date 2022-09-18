@@ -2,6 +2,7 @@ import 'package:creator/creator.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:go_router/go_router.dart';
 import 'client_assets/client_assets.dart';
 import 'gesundheit.dart';
 
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Watcher((context, ref, child) {
+      final GoRouter goRouter = ref.watch(setupGoRouterCreator);
       context.ref.update(uriParametersCreator, (p0) => base);
       ref.read(themeEventsCreator(const ClientThemeEvents.setFirstLoadInfo()));
       ref.read(themeEventsCreator(const ClientThemeEvents.loadLastTheme()));
@@ -53,7 +55,7 @@ class MyApp extends StatelessWidget {
         /// This callback is called every time the brightness changes.
         WidgetsBinding.instance.handlePlatformBrightnessChanged();
 
-        final theme = ref.read(clientThemeCreator).call();
+        final theme = ref.read(clientThemeCreator);
 
         /// This statement triggers a redraw if the phone's platform ever changes while the app is running
         /// Otherwise, it wouldn't know to change themes to the new one
@@ -64,7 +66,7 @@ class MyApp extends StatelessWidget {
         }
       };
 
-      final theme = ref.watch(clientThemeCreator).call();
+      final theme = ref.watch(clientThemeCreator);
       final localeStates = ref.watch(localeCreator);
 
       return MaterialApp.router(
@@ -79,8 +81,9 @@ class MyApp extends StatelessWidget {
 
         // *** ROUTES ***
         restorationScopeId: 'root',
-        // routeInformationParser: _goRouter.routeInformationParser,
-        // routerDelegate: _goRouter.routerDelegate,
+        routeInformationParser: goRouter.routeInformationParser,
+        routerDelegate: goRouter.routerDelegate,
+        routeInformationProvider: goRouter.routeInformationProvider,
 
         // *** LOCALES ***
         localizationsDelegates: const [
@@ -90,7 +93,6 @@ class MyApp extends StatelessWidget {
         ],
         supportedLocales: const [
           ...AppLocalizations.supportedLocales,
-          Locale('ht')
         ],
         // set initially stored locale info here
         locale: localeStates.selectedLocale,

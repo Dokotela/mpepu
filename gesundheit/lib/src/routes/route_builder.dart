@@ -7,7 +7,6 @@ import 'package:go_router/go_router.dart';
 
 // Project imports:
 import '../gesundheit.dart';
-import 'routes.dart';
 
 part 'route_builder.g.dart';
 
@@ -18,7 +17,7 @@ part 'route_builder.g.dart';
 /// spec: https://gorouter.dev/redirection
 /// also: https://github.com/csells/go_router/blob/main/go_router/example/lib/redirection.dart
 ///
-final setupGoRouterProvider = Creator<GoRouter>((ref) {
+final setupGoRouterCreator = Creator<GoRouter>((ref) {
   return GoRouter(
     debugLogDiagnostics: !isProd,
     restorationScopeId: 'router',
@@ -29,6 +28,32 @@ final setupGoRouterProvider = Creator<GoRouter>((ref) {
         ErrorRoute(s.error ?? const RouteFailuresUnspecifiedError()).build(c),
   );
 });
+
+/// ********** ********** *********** *********** **********
+/// *********** ROUTING / INHERITANCE FOR: LOGIN ***********
+/// ********** ********** *********** *********** **********
+
+/// Path for logging in and confirming via one-time passcode
+@TypedGoRoute<LoginRoute>(path: '/', routes: <TypedGoRoute<GoRouteData>>[])
+
+///  LOGIN ROUTE ***********
+class LoginRoute extends GoRouteData {
+  @override
+  Widget build(BuildContext context) => const LoginView();
+}
+
+/// ********** ********** *********** *********** **********
+/// *********** ROUTING / INHERITANCE FOR: LOGIN ***********
+/// ********** ********** *********** *********** **********
+
+/// Path for logging in and confirming via one-time passcode
+@TypedGoRoute<HomeRoute>(path: '/home', routes: <TypedGoRoute<GoRouteData>>[])
+
+///  LOGIN ROUTE ***********
+class HomeRoute extends GoRouteData {
+  @override
+  Widget build(BuildContext context) => const HomeView();
+}
 
 /// ********** ********** *********** *********** **********
 /// *********** ROUTING / INHERITANCE FOR: DEMO ***********
@@ -45,19 +70,6 @@ class DemoRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context) => const LoginView();
-}
-
-/// ********** ********** *********** *********** **********
-/// *********** ROUTING / INHERITANCE FOR: LOGIN ***********
-/// ********** ********** *********** *********** **********
-
-/// Path for logging in and confirming via one-time passcode
-@TypedGoRoute<LoginRoute>(path: '/login', routes: <TypedGoRoute<GoRouteData>>[])
-
-///  LOGIN ROUTE ***********
-class LoginRoute extends GoRouteData {
-  @override
-  Widget build(BuildContext context) => LoginView();
 }
 
 /// ********** ********** *********** *********** **********

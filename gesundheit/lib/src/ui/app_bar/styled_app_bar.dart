@@ -31,8 +31,7 @@ class StyledAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) => Watcher(
         (context, ref, child) => AppBar(
           title: includeVersionNumber ?? false
-              ? _Text(
-                  'v${ref.watch(clientThemeCreator).call().versionNumber}$title')
+              ? _Text('v${ref.watch(clientThemeCreator).versionNumber}$title')
               : _Text(title),
           actions: replaceActionsWithLogoutButton ?? false
               ? const [StyledAppBarLogoutButton(), Gap(8)]

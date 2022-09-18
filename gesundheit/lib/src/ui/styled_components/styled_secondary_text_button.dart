@@ -20,7 +20,7 @@ class StyledSecondaryTextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Watcher(
         (context, ref, _) {
-          final theme = ref.watch(clientThemeCreator).call();
+          final theme = ref.watch(clientThemeCreator);
           return Theme(
             data: Theme.of(context).copyWith(
               textButtonTheme: TextButtonThemeData(
