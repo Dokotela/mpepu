@@ -42,40 +42,53 @@ class LoginRoute extends GoRouteData {
 }
 
 /// ********** ********** *********** *********** **********
-/// *********** ROUTING / INHERITANCE FOR: LOGIN ***********
+/// *********** ROUTING / INHERITANCE FOR: HOME  ***********
 /// ********** ********** *********** *********** **********
 
 /// Path for logging in and confirming via one-time passcode
 @TypedGoRoute<HomeRoute>(path: '/')
 
-///  LOGIN ROUTE ***********
+///  HOME ROUTE ***********
 class HomeRoute extends GoRouteData {
   @override
   Widget build(BuildContext context) => const HomeView();
 }
 
 /// ********** ********** *********** *********** **********
+/// *********** ROUTING / INHERITANCE FOR: GROWTH  ***********
+/// ********** ********** *********** *********** **********
+
+/// Path for logging in and confirming via one-time passcode
+@TypedGoRoute<GrowthRoute>(path: '/growth')
+
+///  HOME ROUTE ***********
+class GrowthRoute extends GoRouteData {
+  @override
+  Widget build(BuildContext context) => GrowthChartView();
+}
+
+/// ********** ********** *********** *********** **********
 /// *********** ROUTING / INHERITANCE FOR: DEMO ***********
 /// ********** ********** *********** *********** **********
 
-// /// Path for opening the demo, which may itself point to its own series of tasks/questionnaires
-// @TypedGoRoute<DemoRoute>(path: '/demo/:demoNumber')
+/// Path for opening the demo, which may itself point to its own series of tasks/questionnaires
+@TypedGoRoute<DemoRoute>(path: '/demo/:demoNumber')
 
-// /// DEMO ROUTE ***********
-// class DemoRoute extends GoRouteData {
-//   const DemoRoute(this.demoNumber);
+/// DEMO ROUTE ***********
+class DemoRoute extends GoRouteData {
+  const DemoRoute(this.demoNumber);
 
-//   final int demoNumber;
+  final int demoNumber;
 
-//   @override
-//   Widget build(BuildContext context) => const LoginView();
-// }
+  @override
+  Widget build(BuildContext context) => const LoginView();
+}
 
-// /// ********** ********** *********** *********** **********
-// /// *********** ROUTING / INHERITANCE FOR: ERROR ***********
-// /// ********** ********** *********** *********** **********
+/// ********** ********** *********** *********** **********
+/// *********** ROUTING / INHERITANCE FOR: ERROR ***********
+/// ********** ********** *********** *********** **********
 
-// /// ERROR ROUTE ***********
+/// ERROR ROUTE ***********
 class ErrorRoute extends GoRouteData {
   const ErrorRoute(this.error);
 

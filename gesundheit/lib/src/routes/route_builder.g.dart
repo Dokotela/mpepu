@@ -9,6 +9,8 @@ part of 'route_builder.dart';
 List<GoRoute> get $appRoutes => [
       $loginRoute,
       $homeRoute,
+      $growthRoute,
+      $demoRoute,
     ];
 
 GoRoute get $loginRoute => GoRouteData.$route(
@@ -38,6 +40,42 @@ extension $HomeRouteExtension on HomeRoute {
 
   String get location => GoRouteData.$location(
         '/',
+      );
+
+  void go(BuildContext context) => context.go(location, extra: this);
+
+  void push(BuildContext context) => context.push(location, extra: this);
+}
+
+GoRoute get $growthRoute => GoRouteData.$route(
+      path: '/growth',
+      factory: $GrowthRouteExtension._fromState,
+    );
+
+extension $GrowthRouteExtension on GrowthRoute {
+  static GrowthRoute _fromState(GoRouterState state) => GrowthRoute();
+
+  String get location => GoRouteData.$location(
+        '/growth',
+      );
+
+  void go(BuildContext context) => context.go(location, extra: this);
+
+  void push(BuildContext context) => context.push(location, extra: this);
+}
+
+GoRoute get $demoRoute => GoRouteData.$route(
+      path: '/demo/:demoNumber',
+      factory: $DemoRouteExtension._fromState,
+    );
+
+extension $DemoRouteExtension on DemoRoute {
+  static DemoRoute _fromState(GoRouterState state) => DemoRoute(
+        int.parse(state.params['demoNumber']!),
+      );
+
+  String get location => GoRouteData.$location(
+        '/demo/${Uri.encodeComponent(demoNumber.toString())}',
       );
 
   void go(BuildContext context) => context.go(location, extra: this);

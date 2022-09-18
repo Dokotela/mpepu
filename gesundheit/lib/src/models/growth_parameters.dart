@@ -18,19 +18,23 @@ class GrowthParameters with _$GrowthParameters {
     required GrowthMeasure growthMeasure,
     required TimeUnit timeUnit,
     required UnitMeasure unitMeasure,
-    @Default({}) Map<String, num> sd4,
-    @Default({}) Map<String, num> sd3,
-    @Default({}) Map<String, num> sd2,
-    @Default({}) Map<String, num> sd1,
-    @Default({}) Map<String, num> sd0,
-    @Default({}) Map<String, num> sd1neg,
-    @Default({}) Map<String, num> sd2neg,
-    @Default({}) Map<String, num> sd3neg,
-    @Default({}) Map<String, num> sd4neg,
+    @Default([]) List<Parameter> values,
   }) = _GrowthParameters;
 
   factory GrowthParameters.fromJson(Map<String, dynamic> json) =>
       _$GrowthParametersFromJson(json);
+}
+
+@freezed
+class Parameter with _$Parameter {
+  const factory Parameter({
+    required String sdGroup,
+    required num timeValue,
+    required num measureValue,
+  }) = _Parameter;
+
+  factory Parameter.fromJson(Map<String, dynamic> json) =>
+      _$ParameterFromJson(json);
 }
 
 enum UnitMeasure {

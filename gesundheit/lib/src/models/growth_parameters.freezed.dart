@@ -166,15 +166,7 @@ mixin _$GrowthParameters {
   GrowthMeasure get growthMeasure => throw _privateConstructorUsedError;
   TimeUnit get timeUnit => throw _privateConstructorUsedError;
   UnitMeasure get unitMeasure => throw _privateConstructorUsedError;
-  Map<String, num> get sd4 => throw _privateConstructorUsedError;
-  Map<String, num> get sd3 => throw _privateConstructorUsedError;
-  Map<String, num> get sd2 => throw _privateConstructorUsedError;
-  Map<String, num> get sd1 => throw _privateConstructorUsedError;
-  Map<String, num> get sd0 => throw _privateConstructorUsedError;
-  Map<String, num> get sd1neg => throw _privateConstructorUsedError;
-  Map<String, num> get sd2neg => throw _privateConstructorUsedError;
-  Map<String, num> get sd3neg => throw _privateConstructorUsedError;
-  Map<String, num> get sd4neg => throw _privateConstructorUsedError;
+  List<Parameter> get values => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -191,15 +183,7 @@ abstract class $GrowthParametersCopyWith<$Res> {
       {GrowthMeasure growthMeasure,
       TimeUnit timeUnit,
       UnitMeasure unitMeasure,
-      Map<String, num> sd4,
-      Map<String, num> sd3,
-      Map<String, num> sd2,
-      Map<String, num> sd1,
-      Map<String, num> sd0,
-      Map<String, num> sd1neg,
-      Map<String, num> sd2neg,
-      Map<String, num> sd3neg,
-      Map<String, num> sd4neg});
+      List<Parameter> values});
 }
 
 /// @nodoc
@@ -216,15 +200,7 @@ class _$GrowthParametersCopyWithImpl<$Res>
     Object? growthMeasure = freezed,
     Object? timeUnit = freezed,
     Object? unitMeasure = freezed,
-    Object? sd4 = freezed,
-    Object? sd3 = freezed,
-    Object? sd2 = freezed,
-    Object? sd1 = freezed,
-    Object? sd0 = freezed,
-    Object? sd1neg = freezed,
-    Object? sd2neg = freezed,
-    Object? sd3neg = freezed,
-    Object? sd4neg = freezed,
+    Object? values = freezed,
   }) {
     return _then(_value.copyWith(
       growthMeasure: growthMeasure == freezed
@@ -239,42 +215,10 @@ class _$GrowthParametersCopyWithImpl<$Res>
           ? _value.unitMeasure
           : unitMeasure // ignore: cast_nullable_to_non_nullable
               as UnitMeasure,
-      sd4: sd4 == freezed
-          ? _value.sd4
-          : sd4 // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd3: sd3 == freezed
-          ? _value.sd3
-          : sd3 // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd2: sd2 == freezed
-          ? _value.sd2
-          : sd2 // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd1: sd1 == freezed
-          ? _value.sd1
-          : sd1 // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd0: sd0 == freezed
-          ? _value.sd0
-          : sd0 // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd1neg: sd1neg == freezed
-          ? _value.sd1neg
-          : sd1neg // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd2neg: sd2neg == freezed
-          ? _value.sd2neg
-          : sd2neg // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd3neg: sd3neg == freezed
-          ? _value.sd3neg
-          : sd3neg // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd4neg: sd4neg == freezed
-          ? _value.sd4neg
-          : sd4neg // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
+      values: values == freezed
+          ? _value.values
+          : values // ignore: cast_nullable_to_non_nullable
+              as List<Parameter>,
     ));
   }
 }
@@ -290,15 +234,7 @@ abstract class _$$_GrowthParametersCopyWith<$Res>
       {GrowthMeasure growthMeasure,
       TimeUnit timeUnit,
       UnitMeasure unitMeasure,
-      Map<String, num> sd4,
-      Map<String, num> sd3,
-      Map<String, num> sd2,
-      Map<String, num> sd1,
-      Map<String, num> sd0,
-      Map<String, num> sd1neg,
-      Map<String, num> sd2neg,
-      Map<String, num> sd3neg,
-      Map<String, num> sd4neg});
+      List<Parameter> values});
 }
 
 /// @nodoc
@@ -317,15 +253,7 @@ class __$$_GrowthParametersCopyWithImpl<$Res>
     Object? growthMeasure = freezed,
     Object? timeUnit = freezed,
     Object? unitMeasure = freezed,
-    Object? sd4 = freezed,
-    Object? sd3 = freezed,
-    Object? sd2 = freezed,
-    Object? sd1 = freezed,
-    Object? sd0 = freezed,
-    Object? sd1neg = freezed,
-    Object? sd2neg = freezed,
-    Object? sd3neg = freezed,
-    Object? sd4neg = freezed,
+    Object? values = freezed,
   }) {
     return _then(_$_GrowthParameters(
       growthMeasure: growthMeasure == freezed
@@ -340,42 +268,10 @@ class __$$_GrowthParametersCopyWithImpl<$Res>
           ? _value.unitMeasure
           : unitMeasure // ignore: cast_nullable_to_non_nullable
               as UnitMeasure,
-      sd4: sd4 == freezed
-          ? _value._sd4
-          : sd4 // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd3: sd3 == freezed
-          ? _value._sd3
-          : sd3 // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd2: sd2 == freezed
-          ? _value._sd2
-          : sd2 // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd1: sd1 == freezed
-          ? _value._sd1
-          : sd1 // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd0: sd0 == freezed
-          ? _value._sd0
-          : sd0 // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd1neg: sd1neg == freezed
-          ? _value._sd1neg
-          : sd1neg // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd2neg: sd2neg == freezed
-          ? _value._sd2neg
-          : sd2neg // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd3neg: sd3neg == freezed
-          ? _value._sd3neg
-          : sd3neg // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
-      sd4neg: sd4neg == freezed
-          ? _value._sd4neg
-          : sd4neg // ignore: cast_nullable_to_non_nullable
-              as Map<String, num>,
+      values: values == freezed
+          ? _value._values
+          : values // ignore: cast_nullable_to_non_nullable
+              as List<Parameter>,
     ));
   }
 }
@@ -387,24 +283,8 @@ class _$_GrowthParameters implements _GrowthParameters {
       {required this.growthMeasure,
       required this.timeUnit,
       required this.unitMeasure,
-      final Map<String, num> sd4 = const {},
-      final Map<String, num> sd3 = const {},
-      final Map<String, num> sd2 = const {},
-      final Map<String, num> sd1 = const {},
-      final Map<String, num> sd0 = const {},
-      final Map<String, num> sd1neg = const {},
-      final Map<String, num> sd2neg = const {},
-      final Map<String, num> sd3neg = const {},
-      final Map<String, num> sd4neg = const {}})
-      : _sd4 = sd4,
-        _sd3 = sd3,
-        _sd2 = sd2,
-        _sd1 = sd1,
-        _sd0 = sd0,
-        _sd1neg = sd1neg,
-        _sd2neg = sd2neg,
-        _sd3neg = sd3neg,
-        _sd4neg = sd4neg;
+      final List<Parameter> values = const []})
+      : _values = values;
 
   factory _$_GrowthParameters.fromJson(Map<String, dynamic> json) =>
       _$$_GrowthParametersFromJson(json);
@@ -415,81 +295,17 @@ class _$_GrowthParameters implements _GrowthParameters {
   final TimeUnit timeUnit;
   @override
   final UnitMeasure unitMeasure;
-  final Map<String, num> _sd4;
+  final List<Parameter> _values;
   @override
   @JsonKey()
-  Map<String, num> get sd4 {
+  List<Parameter> get values {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_sd4);
-  }
-
-  final Map<String, num> _sd3;
-  @override
-  @JsonKey()
-  Map<String, num> get sd3 {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_sd3);
-  }
-
-  final Map<String, num> _sd2;
-  @override
-  @JsonKey()
-  Map<String, num> get sd2 {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_sd2);
-  }
-
-  final Map<String, num> _sd1;
-  @override
-  @JsonKey()
-  Map<String, num> get sd1 {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_sd1);
-  }
-
-  final Map<String, num> _sd0;
-  @override
-  @JsonKey()
-  Map<String, num> get sd0 {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_sd0);
-  }
-
-  final Map<String, num> _sd1neg;
-  @override
-  @JsonKey()
-  Map<String, num> get sd1neg {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_sd1neg);
-  }
-
-  final Map<String, num> _sd2neg;
-  @override
-  @JsonKey()
-  Map<String, num> get sd2neg {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_sd2neg);
-  }
-
-  final Map<String, num> _sd3neg;
-  @override
-  @JsonKey()
-  Map<String, num> get sd3neg {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_sd3neg);
-  }
-
-  final Map<String, num> _sd4neg;
-  @override
-  @JsonKey()
-  Map<String, num> get sd4neg {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_sd4neg);
+    return EqualUnmodifiableListView(_values);
   }
 
   @override
   String toString() {
-    return 'GrowthParameters(growthMeasure: $growthMeasure, timeUnit: $timeUnit, unitMeasure: $unitMeasure, sd4: $sd4, sd3: $sd3, sd2: $sd2, sd1: $sd1, sd0: $sd0, sd1neg: $sd1neg, sd2neg: $sd2neg, sd3neg: $sd3neg, sd4neg: $sd4neg)';
+    return 'GrowthParameters(growthMeasure: $growthMeasure, timeUnit: $timeUnit, unitMeasure: $unitMeasure, values: $values)';
   }
 
   @override
@@ -502,15 +318,7 @@ class _$_GrowthParameters implements _GrowthParameters {
             const DeepCollectionEquality().equals(other.timeUnit, timeUnit) &&
             const DeepCollectionEquality()
                 .equals(other.unitMeasure, unitMeasure) &&
-            const DeepCollectionEquality().equals(other._sd4, _sd4) &&
-            const DeepCollectionEquality().equals(other._sd3, _sd3) &&
-            const DeepCollectionEquality().equals(other._sd2, _sd2) &&
-            const DeepCollectionEquality().equals(other._sd1, _sd1) &&
-            const DeepCollectionEquality().equals(other._sd0, _sd0) &&
-            const DeepCollectionEquality().equals(other._sd1neg, _sd1neg) &&
-            const DeepCollectionEquality().equals(other._sd2neg, _sd2neg) &&
-            const DeepCollectionEquality().equals(other._sd3neg, _sd3neg) &&
-            const DeepCollectionEquality().equals(other._sd4neg, _sd4neg));
+            const DeepCollectionEquality().equals(other._values, _values));
   }
 
   @JsonKey(ignore: true)
@@ -520,15 +328,7 @@ class _$_GrowthParameters implements _GrowthParameters {
       const DeepCollectionEquality().hash(growthMeasure),
       const DeepCollectionEquality().hash(timeUnit),
       const DeepCollectionEquality().hash(unitMeasure),
-      const DeepCollectionEquality().hash(_sd4),
-      const DeepCollectionEquality().hash(_sd3),
-      const DeepCollectionEquality().hash(_sd2),
-      const DeepCollectionEquality().hash(_sd1),
-      const DeepCollectionEquality().hash(_sd0),
-      const DeepCollectionEquality().hash(_sd1neg),
-      const DeepCollectionEquality().hash(_sd2neg),
-      const DeepCollectionEquality().hash(_sd3neg),
-      const DeepCollectionEquality().hash(_sd4neg));
+      const DeepCollectionEquality().hash(_values));
 
   @JsonKey(ignore: true)
   @override
@@ -548,15 +348,7 @@ abstract class _GrowthParameters implements GrowthParameters {
       {required final GrowthMeasure growthMeasure,
       required final TimeUnit timeUnit,
       required final UnitMeasure unitMeasure,
-      final Map<String, num> sd4,
-      final Map<String, num> sd3,
-      final Map<String, num> sd2,
-      final Map<String, num> sd1,
-      final Map<String, num> sd0,
-      final Map<String, num> sd1neg,
-      final Map<String, num> sd2neg,
-      final Map<String, num> sd3neg,
-      final Map<String, num> sd4neg}) = _$_GrowthParameters;
+      final List<Parameter> values}) = _$_GrowthParameters;
 
   factory _GrowthParameters.fromJson(Map<String, dynamic> json) =
       _$_GrowthParameters.fromJson;
@@ -568,25 +360,181 @@ abstract class _GrowthParameters implements GrowthParameters {
   @override
   UnitMeasure get unitMeasure;
   @override
-  Map<String, num> get sd4;
-  @override
-  Map<String, num> get sd3;
-  @override
-  Map<String, num> get sd2;
-  @override
-  Map<String, num> get sd1;
-  @override
-  Map<String, num> get sd0;
-  @override
-  Map<String, num> get sd1neg;
-  @override
-  Map<String, num> get sd2neg;
-  @override
-  Map<String, num> get sd3neg;
-  @override
-  Map<String, num> get sd4neg;
+  List<Parameter> get values;
   @override
   @JsonKey(ignore: true)
   _$$_GrowthParametersCopyWith<_$_GrowthParameters> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+Parameter _$ParameterFromJson(Map<String, dynamic> json) {
+  return _Parameter.fromJson(json);
+}
+
+/// @nodoc
+mixin _$Parameter {
+  String get sdGroup => throw _privateConstructorUsedError;
+  num get timeValue => throw _privateConstructorUsedError;
+  num get measureValue => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ParameterCopyWith<Parameter> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $ParameterCopyWith<$Res> {
+  factory $ParameterCopyWith(Parameter value, $Res Function(Parameter) then) =
+      _$ParameterCopyWithImpl<$Res>;
+  $Res call({String sdGroup, num timeValue, num measureValue});
+}
+
+/// @nodoc
+class _$ParameterCopyWithImpl<$Res> implements $ParameterCopyWith<$Res> {
+  _$ParameterCopyWithImpl(this._value, this._then);
+
+  final Parameter _value;
+  // ignore: unused_field
+  final $Res Function(Parameter) _then;
+
+  @override
+  $Res call({
+    Object? sdGroup = freezed,
+    Object? timeValue = freezed,
+    Object? measureValue = freezed,
+  }) {
+    return _then(_value.copyWith(
+      sdGroup: sdGroup == freezed
+          ? _value.sdGroup
+          : sdGroup // ignore: cast_nullable_to_non_nullable
+              as String,
+      timeValue: timeValue == freezed
+          ? _value.timeValue
+          : timeValue // ignore: cast_nullable_to_non_nullable
+              as num,
+      measureValue: measureValue == freezed
+          ? _value.measureValue
+          : measureValue // ignore: cast_nullable_to_non_nullable
+              as num,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$$_ParameterCopyWith<$Res> implements $ParameterCopyWith<$Res> {
+  factory _$$_ParameterCopyWith(
+          _$_Parameter value, $Res Function(_$_Parameter) then) =
+      __$$_ParameterCopyWithImpl<$Res>;
+  @override
+  $Res call({String sdGroup, num timeValue, num measureValue});
+}
+
+/// @nodoc
+class __$$_ParameterCopyWithImpl<$Res> extends _$ParameterCopyWithImpl<$Res>
+    implements _$$_ParameterCopyWith<$Res> {
+  __$$_ParameterCopyWithImpl(
+      _$_Parameter _value, $Res Function(_$_Parameter) _then)
+      : super(_value, (v) => _then(v as _$_Parameter));
+
+  @override
+  _$_Parameter get _value => super._value as _$_Parameter;
+
+  @override
+  $Res call({
+    Object? sdGroup = freezed,
+    Object? timeValue = freezed,
+    Object? measureValue = freezed,
+  }) {
+    return _then(_$_Parameter(
+      sdGroup: sdGroup == freezed
+          ? _value.sdGroup
+          : sdGroup // ignore: cast_nullable_to_non_nullable
+              as String,
+      timeValue: timeValue == freezed
+          ? _value.timeValue
+          : timeValue // ignore: cast_nullable_to_non_nullable
+              as num,
+      measureValue: measureValue == freezed
+          ? _value.measureValue
+          : measureValue // ignore: cast_nullable_to_non_nullable
+              as num,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_Parameter implements _Parameter {
+  const _$_Parameter(
+      {required this.sdGroup,
+      required this.timeValue,
+      required this.measureValue});
+
+  factory _$_Parameter.fromJson(Map<String, dynamic> json) =>
+      _$$_ParameterFromJson(json);
+
+  @override
+  final String sdGroup;
+  @override
+  final num timeValue;
+  @override
+  final num measureValue;
+
+  @override
+  String toString() {
+    return 'Parameter(sdGroup: $sdGroup, timeValue: $timeValue, measureValue: $measureValue)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_Parameter &&
+            const DeepCollectionEquality().equals(other.sdGroup, sdGroup) &&
+            const DeepCollectionEquality().equals(other.timeValue, timeValue) &&
+            const DeepCollectionEquality()
+                .equals(other.measureValue, measureValue));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(sdGroup),
+      const DeepCollectionEquality().hash(timeValue),
+      const DeepCollectionEquality().hash(measureValue));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_ParameterCopyWith<_$_Parameter> get copyWith =>
+      __$$_ParameterCopyWithImpl<_$_Parameter>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_ParameterToJson(
+      this,
+    );
+  }
+}
+
+abstract class _Parameter implements Parameter {
+  const factory _Parameter(
+      {required final String sdGroup,
+      required final num timeValue,
+      required final num measureValue}) = _$_Parameter;
+
+  factory _Parameter.fromJson(Map<String, dynamic> json) =
+      _$_Parameter.fromJson;
+
+  @override
+  String get sdGroup;
+  @override
+  num get timeValue;
+  @override
+  num get measureValue;
+  @override
+  @JsonKey(ignore: true)
+  _$$_ParameterCopyWith<_$_Parameter> get copyWith =>
       throw _privateConstructorUsedError;
 }

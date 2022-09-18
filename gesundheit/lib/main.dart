@@ -13,7 +13,10 @@ GetIt getIt = GetIt.instance;
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   getIt.registerSingleton<ClientAssets>(customClientAssets);
-  runApp(CreatorGraph(observer: Logger(), child: MyApp(base: Uri.base)));
+  runApp(CreatorGraph(
+    // observer: Logger(),
+    child: MyApp(base: Uri.base),
+  ));
 }
 
 class Logger extends CreatorObserver {
@@ -39,26 +42,26 @@ class MyApp extends StatelessWidget {
     return Watcher((context, ref, child) {
       // final GoRouter goRouter = ref.watch(setupGoRouterCreator);
       // print(goRouter == null);
-      // context.ref.update(uriParametersCreator, (p0) => base);
-      // ref.read(themeEventsCreator(const ClientThemeEvents.setFirstLoadInfo()));
-      // ref.read(themeEventsCreator(const ClientThemeEvents.loadLastTheme()));
-      // ref.read(themeEventsCreator(const ClientThemeEvents.getPackageInfo()));
+      context.ref.update(uriParametersCreator, (p0) => base);
+      ref.read(themeEventsCreator(const ClientThemeEvents.setFirstLoadInfo()));
+      ref.read(themeEventsCreator(const ClientThemeEvents.loadLastTheme()));
+      ref.read(themeEventsCreator(const ClientThemeEvents.getPackageInfo()));
 
-      // final window = WidgetsBinding.instance.window;
-      // window.onPlatformBrightnessChanged = () {
-      //   /// This callback is called every time the brightness changes.
-      //   WidgetsBinding.instance.handlePlatformBrightnessChanged();
+      final window = WidgetsBinding.instance.window;
+      window.onPlatformBrightnessChanged = () {
+        /// This callback is called every time the brightness changes.
+        WidgetsBinding.instance.handlePlatformBrightnessChanged();
 
-      //   final theme = ref.read(clientThemeCreator);
+        final theme = ref.read(clientThemeCreator);
 
-      //   /// This statement triggers a redraw if the phone's platform ever changes while the app is running
-      //   /// Otherwise, it wouldn't know to change themes to the new one
-      //   /// spec: https://stackoverflow.com/a/69784475
-      //   if (WidgetsBinding.instance.window.platformBrightness !=
-      //       theme.data.brightness) {
-      //     ref.read(themeEventsCreator(const ClientThemeEvents.loadLastTheme()));
-      //   }
-      // };
+        /// This statement triggers a redraw if the phone's platform ever changes while the app is running
+        /// Otherwise, it wouldn't know to change themes to the new one
+        /// spec: https://stackoverflow.com/a/69784475
+        if (WidgetsBinding.instance.window.platformBrightness !=
+            theme.data.brightness) {
+          ref.read(themeEventsCreator(const ClientThemeEvents.loadLastTheme()));
+        }
+      };
 
       final theme = ref.watch(clientThemeCreator);
       final localeStates = ref.watch(localeCreator);

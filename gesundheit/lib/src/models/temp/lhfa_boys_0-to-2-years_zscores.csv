@@ -2,195 +2,1006 @@
     "growthMeasure": "Length/height-for-age",
     "timeUnit": "month",
     "unitMeasure": "centimeter",
-    "sd4": {},
-    "sd3": {
-        "0": 55.6,
-        "1": 60.6,
-        "2": 64.4,
-        "3": 67.6,
-        "4": 70.1,
-        "5": 72.2,
-        "6": 74,
-        "7": 75.7,
-        "8": 77.2,
-        "9": 78.7,
-        "10": 80.1,
-        "11": 81.5,
-        "12": 82.9,
-        "13": 84.2,
-        "14": 85.5,
-        "15": 86.7,
-        "16": 88,
-        "17": 89.2,
-        "18": 90.4,
-        "19": 91.5,
-        "20": 92.6,
-        "21": 93.8,
-        "22": 94.9,
-        "23": 95.9,
-        "24": 97
-    },
-    "sd2": {
-        "0": 53.7,
-        "1": 58.6,
-        "2": 62.4,
-        "3": 65.5,
-        "4": 68,
-        "5": 70.1,
-        "6": 71.9,
-        "7": 73.5,
-        "8": 75,
-        "9": 76.5,
-        "10": 77.9,
-        "11": 79.2,
-        "12": 80.5,
-        "13": 81.8,
-        "14": 83,
-        "15": 84.2,
-        "16": 85.4,
-        "17": 86.5,
-        "18": 87.7,
-        "19": 88.8,
-        "20": 89.8,
-        "21": 90.9,
-        "22": 91.9,
-        "23": 92.9,
-        "24": 93.9
-    },
-    "sd1": {
-        "0": 51.8,
-        "1": 56.7,
-        "2": 60.4,
-        "3": 63.5,
-        "4": 66,
-        "5": 68,
-        "6": 69.8,
-        "7": 71.3,
-        "8": 72.8,
-        "9": 74.2,
-        "10": 75.6,
-        "11": 76.9,
-        "12": 78.1,
-        "13": 79.3,
-        "14": 80.5,
-        "15": 81.7,
-        "16": 82.8,
-        "17": 83.9,
-        "18": 85,
-        "19": 86,
-        "20": 87,
-        "21": 88,
-        "22": 89,
-        "23": 89.9,
-        "24": 90.9
-    },
-    "sd0": {
-        "0": 49.9,
-        "1": 54.7,
-        "2": 58.4,
-        "3": 61.4,
-        "4": 63.9,
-        "5": 65.9,
-        "6": 67.6,
-        "7": 69.2,
-        "8": 70.6,
-        "9": 72,
-        "10": 73.3,
-        "11": 74.5,
-        "12": 75.7,
-        "13": 76.9,
-        "14": 78,
-        "15": 79.1,
-        "16": 80.2,
-        "17": 81.2,
-        "18": 82.3,
-        "19": 83.2,
-        "20": 84.2,
-        "21": 85.1,
-        "22": 86,
-        "23": 86.9,
-        "24": 87.8
-    },
-    "sd1neg": {
-        "0": 48,
-        "1": 52.8,
-        "2": 56.4,
-        "3": 59.4,
-        "4": 61.8,
-        "5": 63.8,
-        "6": 65.5,
-        "7": 67,
-        "8": 68.4,
-        "9": 69.7,
-        "10": 71,
-        "11": 72.2,
-        "12": 73.4,
-        "13": 74.5,
-        "14": 75.6,
-        "15": 76.6,
-        "16": 77.6,
-        "17": 78.6,
-        "18": 79.6,
-        "19": 80.5,
-        "20": 81.4,
-        "21": 82.3,
-        "22": 83.1,
-        "23": 83.9,
-        "24": 84.8
-    },
-    "sd2neg": {
-        "0": 46.1,
-        "1": 50.8,
-        "2": 54.4,
-        "3": 57.3,
-        "4": 59.7,
-        "5": 61.7,
-        "6": 63.3,
-        "7": 64.8,
-        "8": 66.2,
-        "9": 67.5,
-        "10": 68.7,
-        "11": 69.9,
-        "12": 71,
-        "13": 72.1,
-        "14": 73.1,
-        "15": 74.1,
-        "16": 75,
-        "17": 76,
-        "18": 76.9,
-        "19": 77.7,
-        "20": 78.6,
-        "21": 79.4,
-        "22": 80.2,
-        "23": 81,
-        "24": 81.7
-    },
-    "sd3neg": {
-        "0": 44.2,
-        "1": 48.9,
-        "2": 52.4,
-        "3": 55.3,
-        "4": 57.6,
-        "5": 59.6,
-        "6": 61.2,
-        "7": 62.7,
-        "8": 64,
-        "9": 65.2,
-        "10": 66.4,
-        "11": 67.6,
-        "12": 68.6,
-        "13": 69.6,
-        "14": 70.6,
-        "15": 71.6,
-        "16": 72.5,
-        "17": 73.3,
-        "18": 74.2,
-        "19": 75,
-        "20": 75.8,
-        "21": 76.5,
-        "22": 77.2,
-        "23": 78,
-        "24": 78.7
-    },
-    "sd4neg": {}
+    "values": [
+        {
+            "sdGroup": "SD",
+            "timeValue": 0,
+            "measureValue": 1.8931
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 1,
+            "measureValue": 1.9465
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 2,
+            "measureValue": 2.0005
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 3,
+            "measureValue": 2.0444
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 4,
+            "measureValue": 2.0808
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 5,
+            "measureValue": 2.1115
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 6,
+            "measureValue": 2.1403
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 7,
+            "measureValue": 2.1711
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 8,
+            "measureValue": 2.2055
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 9,
+            "measureValue": 2.2433
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 10,
+            "measureValue": 2.2849
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 11,
+            "measureValue": 2.3293
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 12,
+            "measureValue": 2.3762
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 13,
+            "measureValue": 2.426
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 14,
+            "measureValue": 2.4773
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 15,
+            "measureValue": 2.5303
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 16,
+            "measureValue": 2.5844
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 17,
+            "measureValue": 2.6406
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 18,
+            "measureValue": 2.6973
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 19,
+            "measureValue": 2.7553
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 20,
+            "measureValue": 2.814
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 21,
+            "measureValue": 2.8742
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 22,
+            "measureValue": 2.9342
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 23,
+            "measureValue": 2.9951
+        },
+        {
+            "sdGroup": "SD",
+            "timeValue": 24,
+            "measureValue": 3.0551
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 0,
+            "measureValue": 44.2
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 1,
+            "measureValue": 48.9
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 2,
+            "measureValue": 52.4
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 3,
+            "measureValue": 55.3
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 4,
+            "measureValue": 57.6
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 5,
+            "measureValue": 59.6
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 6,
+            "measureValue": 61.2
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 7,
+            "measureValue": 62.7
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 8,
+            "measureValue": 64
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 9,
+            "measureValue": 65.2
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 10,
+            "measureValue": 66.4
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 11,
+            "measureValue": 67.6
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 12,
+            "measureValue": 68.6
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 13,
+            "measureValue": 69.6
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 14,
+            "measureValue": 70.6
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 15,
+            "measureValue": 71.6
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 16,
+            "measureValue": 72.5
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 17,
+            "measureValue": 73.3
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 18,
+            "measureValue": 74.2
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 19,
+            "measureValue": 75
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 20,
+            "measureValue": 75.8
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 21,
+            "measureValue": 76.5
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 22,
+            "measureValue": 77.2
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 23,
+            "measureValue": 78
+        },
+        {
+            "sdGroup": "SD3neg",
+            "timeValue": 24,
+            "measureValue": 78.7
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 0,
+            "measureValue": 46.1
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 1,
+            "measureValue": 50.8
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 2,
+            "measureValue": 54.4
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 3,
+            "measureValue": 57.3
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 4,
+            "measureValue": 59.7
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 5,
+            "measureValue": 61.7
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 6,
+            "measureValue": 63.3
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 7,
+            "measureValue": 64.8
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 8,
+            "measureValue": 66.2
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 9,
+            "measureValue": 67.5
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 10,
+            "measureValue": 68.7
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 11,
+            "measureValue": 69.9
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 12,
+            "measureValue": 71
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 13,
+            "measureValue": 72.1
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 14,
+            "measureValue": 73.1
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 15,
+            "measureValue": 74.1
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 16,
+            "measureValue": 75
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 17,
+            "measureValue": 76
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 18,
+            "measureValue": 76.9
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 19,
+            "measureValue": 77.7
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 20,
+            "measureValue": 78.6
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 21,
+            "measureValue": 79.4
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 22,
+            "measureValue": 80.2
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 23,
+            "measureValue": 81
+        },
+        {
+            "sdGroup": "SD2neg",
+            "timeValue": 24,
+            "measureValue": 81.7
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 0,
+            "measureValue": 48
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 1,
+            "measureValue": 52.8
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 2,
+            "measureValue": 56.4
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 3,
+            "measureValue": 59.4
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 4,
+            "measureValue": 61.8
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 5,
+            "measureValue": 63.8
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 6,
+            "measureValue": 65.5
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 7,
+            "measureValue": 67
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 8,
+            "measureValue": 68.4
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 9,
+            "measureValue": 69.7
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 10,
+            "measureValue": 71
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 11,
+            "measureValue": 72.2
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 12,
+            "measureValue": 73.4
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 13,
+            "measureValue": 74.5
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 14,
+            "measureValue": 75.6
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 15,
+            "measureValue": 76.6
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 16,
+            "measureValue": 77.6
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 17,
+            "measureValue": 78.6
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 18,
+            "measureValue": 79.6
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 19,
+            "measureValue": 80.5
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 20,
+            "measureValue": 81.4
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 21,
+            "measureValue": 82.3
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 22,
+            "measureValue": 83.1
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 23,
+            "measureValue": 83.9
+        },
+        {
+            "sdGroup": "SD1neg",
+            "timeValue": 24,
+            "measureValue": 84.8
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 0,
+            "measureValue": 49.9
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 1,
+            "measureValue": 54.7
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 2,
+            "measureValue": 58.4
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 3,
+            "measureValue": 61.4
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 4,
+            "measureValue": 63.9
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 5,
+            "measureValue": 65.9
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 6,
+            "measureValue": 67.6
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 7,
+            "measureValue": 69.2
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 8,
+            "measureValue": 70.6
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 9,
+            "measureValue": 72
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 10,
+            "measureValue": 73.3
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 11,
+            "measureValue": 74.5
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 12,
+            "measureValue": 75.7
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 13,
+            "measureValue": 76.9
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 14,
+            "measureValue": 78
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 15,
+            "measureValue": 79.1
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 16,
+            "measureValue": 80.2
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 17,
+            "measureValue": 81.2
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 18,
+            "measureValue": 82.3
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 19,
+            "measureValue": 83.2
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 20,
+            "measureValue": 84.2
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 21,
+            "measureValue": 85.1
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 22,
+            "measureValue": 86
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 23,
+            "measureValue": 86.9
+        },
+        {
+            "sdGroup": "SD0",
+            "timeValue": 24,
+            "measureValue": 87.8
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 0,
+            "measureValue": 51.8
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 1,
+            "measureValue": 56.7
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 2,
+            "measureValue": 60.4
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 3,
+            "measureValue": 63.5
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 4,
+            "measureValue": 66
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 5,
+            "measureValue": 68
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 6,
+            "measureValue": 69.8
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 7,
+            "measureValue": 71.3
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 8,
+            "measureValue": 72.8
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 9,
+            "measureValue": 74.2
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 10,
+            "measureValue": 75.6
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 11,
+            "measureValue": 76.9
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 12,
+            "measureValue": 78.1
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 13,
+            "measureValue": 79.3
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 14,
+            "measureValue": 80.5
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 15,
+            "measureValue": 81.7
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 16,
+            "measureValue": 82.8
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 17,
+            "measureValue": 83.9
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 18,
+            "measureValue": 85
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 19,
+            "measureValue": 86
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 20,
+            "measureValue": 87
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 21,
+            "measureValue": 88
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 22,
+            "measureValue": 89
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 23,
+            "measureValue": 89.9
+        },
+        {
+            "sdGroup": "SD1",
+            "timeValue": 24,
+            "measureValue": 90.9
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 0,
+            "measureValue": 53.7
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 1,
+            "measureValue": 58.6
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 2,
+            "measureValue": 62.4
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 3,
+            "measureValue": 65.5
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 4,
+            "measureValue": 68
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 5,
+            "measureValue": 70.1
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 6,
+            "measureValue": 71.9
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 7,
+            "measureValue": 73.5
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 8,
+            "measureValue": 75
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 9,
+            "measureValue": 76.5
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 10,
+            "measureValue": 77.9
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 11,
+            "measureValue": 79.2
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 12,
+            "measureValue": 80.5
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 13,
+            "measureValue": 81.8
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 14,
+            "measureValue": 83
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 15,
+            "measureValue": 84.2
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 16,
+            "measureValue": 85.4
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 17,
+            "measureValue": 86.5
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 18,
+            "measureValue": 87.7
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 19,
+            "measureValue": 88.8
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 20,
+            "measureValue": 89.8
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 21,
+            "measureValue": 90.9
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 22,
+            "measureValue": 91.9
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 23,
+            "measureValue": 92.9
+        },
+        {
+            "sdGroup": "SD2",
+            "timeValue": 24,
+            "measureValue": 93.9
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 0,
+            "measureValue": 55.6
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 1,
+            "measureValue": 60.6
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 2,
+            "measureValue": 64.4
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 3,
+            "measureValue": 67.6
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 4,
+            "measureValue": 70.1
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 5,
+            "measureValue": 72.2
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 6,
+            "measureValue": 74
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 7,
+            "measureValue": 75.7
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 8,
+            "measureValue": 77.2
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 9,
+            "measureValue": 78.7
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 10,
+            "measureValue": 80.1
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 11,
+            "measureValue": 81.5
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 12,
+            "measureValue": 82.9
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 13,
+            "measureValue": 84.2
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 14,
+            "measureValue": 85.5
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 15,
+            "measureValue": 86.7
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 16,
+            "measureValue": 88
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 17,
+            "measureValue": 89.2
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 18,
+            "measureValue": 90.4
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 19,
+            "measureValue": 91.5
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 20,
+            "measureValue": 92.6
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 21,
+            "measureValue": 93.8
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 22,
+            "measureValue": 94.9
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 23,
+            "measureValue": 95.9
+        },
+        {
+            "sdGroup": "SD3",
+            "timeValue": 24,
+            "measureValue": 97
+        }
+    ]
 }

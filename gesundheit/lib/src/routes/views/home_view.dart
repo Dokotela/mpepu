@@ -39,7 +39,9 @@ class HomeView extends StatelessWidget {
                     child: ElevatedButton.icon(
                       icon: const Icon(Icons.person_search),
                       label: const Text('Patient Index'),
-                      onPressed: () {},
+                      onPressed: () {
+                        GrowthRoute().go(context);
+                      },
                     ),
                   ),
                   const Gap(36),
