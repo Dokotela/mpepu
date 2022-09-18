@@ -7,6 +7,7 @@ import '../utils/json.dart';
 Future<void> main() async {
   var dir = Directory('../../../assets/growth_tables');
   final fileList = await dir.list().map((event) => event.path).toList();
+  var allGrowthParameters = AllGrowthParameters([]);
   for (var file in fileList) {
     print(file);
     final fileString = await File(file).readAsString();
@@ -17,7 +18,10 @@ Future<void> main() async {
         timeUnit: unitFromString(rows[0][0]),
         unitMeasure: unitForGrowthMeasure(measureFromFileName(file)));
     var values = <Parameter>[];
-    for (var i = 4; i < rows[0].length; i++) {
+    for (var i =
+            rows[0].indexWhere((element) => element.toString().contains('neg'));
+        i < rows[0].length;
+        i++) {
       for (var j = 1; j < rows.length; j++) {
         values.add(Parameter(
             sdGroup: rows[0][i],
@@ -26,8 +30,12 @@ Future<void> main() async {
       }
     }
     newGrowthParameters = newGrowthParameters.copyWith(values: values);
-
-    await File('./temp/${file.split('/').last}')
-        .writeAsString(jsonPrettyPrint(newGrowthParameters.toJson()));
+    allGrowthParameters = allGrowthParameters.copyWith(growthParameters: [
+      ...allGrowthParameters.growthParameters,
+      newGrowthParameters,
+    ]);
   }
+  await File('all_growth_parameters.dart').writeAsString(
+      "import 'models.dart';\n\n"
+      'final allGrowthParameters = AllGrowthParameters.fromJson(${jsonPrettyPrint(allGrowthParameters.toJson())});');
 }

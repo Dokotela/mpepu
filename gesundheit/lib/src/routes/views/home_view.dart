@@ -40,7 +40,11 @@ class HomeView extends StatelessWidget {
                       icon: const Icon(Icons.person_search),
                       label: const Text('Patient Index'),
                       onPressed: () {
-                        GrowthRoute().go(context);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => GrowthChartView()),
+                        );
                       },
                     ),
                   ),

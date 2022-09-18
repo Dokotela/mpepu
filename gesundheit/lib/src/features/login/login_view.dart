@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
 
 import '../../gesundheit.dart';
-import '../../models/models.dart';
-import '../../models/temp/acfa_boys_3_5_zscores.dart';
-import '../growth/data.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -18,12 +15,10 @@ class LoginView extends StatelessWidget {
               title: clientAssets.clientApis.clientAppTitle,
               logo: AssetImage(clientAssets.clientImages.logo),
               onLogin: (_) {
-                try {
-                  HomeRoute().go(context);
-                } catch (e, stack) {
-                  print(e);
-                  print(stack);
-                }
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomeView()),
+                );
                 return;
               },
               onSubmitAnimationCompleted: () {},
