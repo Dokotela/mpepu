@@ -17,24 +17,23 @@ part 'route_builder.g.dart';
 /// spec: https://gorouter.dev/redirection
 /// also: https://github.com/csells/go_router/blob/main/go_router/example/lib/redirection.dart
 ///
-final setupGoRouterCreator = Creator<GoRouter>((ref) {
-  return GoRouter(
-    debugLogDiagnostics: !isProd,
-    restorationScopeId: 'router',
-    // refreshListenable: ref.watch(isLoggedInEmitter),
-    // redirect: (state) => ref.watch(redirectLogicProvider(state)),
-    routes: $appRoutes,
-    errorBuilder: (c, s) =>
-        ErrorRoute(s.error ?? const RouteFailuresUnspecifiedError()).build(c),
-  );
-});
+final setupGoRouterCreator = GoRouter(
+  initialLocation: '/login',
+  debugLogDiagnostics: !isProd,
+  restorationScopeId: 'root',
+  // refreshListenable: ref.watch(isLoggedInEmitter),
+  // redirect: (state) => true ? HomeRoute().location : LoginRoute().location,
+  routes: $appRoutes,
+  errorBuilder: (c, s) =>
+      ErrorRoute(s.error ?? const RouteFailuresUnspecifiedError()).build(c),
+);
 
 /// ********** ********** *********** *********** **********
 /// *********** ROUTING / INHERITANCE FOR: LOGIN ***********
 /// ********** ********** *********** *********** **********
 
 /// Path for logging in and confirming via one-time passcode
-@TypedGoRoute<LoginRoute>(path: '/', routes: <TypedGoRoute<GoRouteData>>[])
+@TypedGoRoute<LoginRoute>(path: '/login')
 
 ///  LOGIN ROUTE ***********
 class LoginRoute extends GoRouteData {
@@ -47,7 +46,7 @@ class LoginRoute extends GoRouteData {
 /// ********** ********** *********** *********** **********
 
 /// Path for logging in and confirming via one-time passcode
-@TypedGoRoute<HomeRoute>(path: '/home', routes: <TypedGoRoute<GoRouteData>>[])
+@TypedGoRoute<HomeRoute>(path: '/')
 
 ///  LOGIN ROUTE ***********
 class HomeRoute extends GoRouteData {
@@ -59,31 +58,29 @@ class HomeRoute extends GoRouteData {
 /// *********** ROUTING / INHERITANCE FOR: DEMO ***********
 /// ********** ********** *********** *********** **********
 
-/// Path for opening the demo, which may itself point to its own series of tasks/questionnaires
-@TypedGoRoute<DemoRoute>(path: '/demo/:demoNumber')
+// /// Path for opening the demo, which may itself point to its own series of tasks/questionnaires
+// @TypedGoRoute<DemoRoute>(path: '/demo/:demoNumber')
 
-/// DEMO ROUTE ***********
-class DemoRoute extends GoRouteData {
-  const DemoRoute(this.demoNumber);
+// /// DEMO ROUTE ***********
+// class DemoRoute extends GoRouteData {
+//   const DemoRoute(this.demoNumber);
 
-  final int demoNumber;
+//   final int demoNumber;
 
-  @override
-  Widget build(BuildContext context) => const LoginView();
-}
+//   @override
+//   Widget build(BuildContext context) => const LoginView();
+// }
 
-/// ********** ********** *********** *********** **********
-/// *********** ROUTING / INHERITANCE FOR: ERROR ***********
-/// ********** ********** *********** *********** **********
+// /// ********** ********** *********** *********** **********
+// /// *********** ROUTING / INHERITANCE FOR: ERROR ***********
+// /// ********** ********** *********** *********** **********
 
-/// ERROR ROUTE ***********
+// /// ERROR ROUTE ***********
 class ErrorRoute extends GoRouteData {
   const ErrorRoute(this.error);
 
   final Exception error;
 
   @override
-  Widget build(BuildContext context) {
-    return ErrorView(error);
-  }
+  Widget build(BuildContext context) => ErrorView(error);
 }

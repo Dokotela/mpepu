@@ -17,31 +17,63 @@ class GrowthParameters with _$GrowthParameters {
   const factory GrowthParameters({
     required GrowthMeasure growthMeasure,
     required TimeUnit timeUnit,
-    @Default(<String, ZScoreValues>{}) Map<String, ZScoreValues> scoreForAge,
+    required UnitMeasure unitMeasure,
+    @Default({}) Map<String, num> sd4,
+    @Default({}) Map<String, num> sd3,
+    @Default({}) Map<String, num> sd2,
+    @Default({}) Map<String, num> sd1,
+    @Default({}) Map<String, num> sd0,
+    @Default({}) Map<String, num> sd1neg,
+    @Default({}) Map<String, num> sd2neg,
+    @Default({}) Map<String, num> sd3neg,
+    @Default({}) Map<String, num> sd4neg,
   }) = _GrowthParameters;
 
   factory GrowthParameters.fromJson(Map<String, dynamic> json) =>
       _$GrowthParametersFromJson(json);
 }
 
-@freezed
-class ZScoreValues with _$ZScoreValues {
-  const factory ZScoreValues({
-    @Default(<String, String>{}) Map<String, String> zScoreValues,
-  }) = _ZScoreValues;
+enum UnitMeasure {
+  @JsonValue('centimeter')
+  cm,
+  @JsonValue('kilogram')
+  kg,
+  @JsonValue('kilogram-for-centimeter')
+  kg_cm,
+  @JsonValue('BMI (kg/m2)')
+  bmi,
+}
 
-  factory ZScoreValues.fromJson(Map<String, dynamic> json) =>
-      _$ZScoreValuesFromJson(json);
+UnitMeasure unitForGrowthMeasure(GrowthMeasure growthMeasure) {
+  switch (growthMeasure) {
+    case GrowthMeasure.armCircumferenceForAge:
+      return UnitMeasure.cm;
+    case GrowthMeasure.lengthHeightForAge:
+      return UnitMeasure.cm;
+    case GrowthMeasure.weightForAge:
+      return UnitMeasure.kg;
+    case GrowthMeasure.weightForLengthHeight:
+      return UnitMeasure.kg_cm;
+    case GrowthMeasure.bmiForAge:
+      return UnitMeasure.bmi;
+    case GrowthMeasure.headCircumferenceForAge:
+      return UnitMeasure.cm;
+  }
 }
 
 enum GrowthMeasure {
+  @JsonValue('Arm circumference-for-age')
   armCircumferenceForAge,
+  @JsonValue('Length/height-for-age')
   lengthHeightForAge,
+  @JsonValue('Weight-for-age')
   weightForAge,
+  @JsonValue('Weight-for-length/height')
   weightForLengthHeight,
+  @JsonValue('BMI-for-age')
   bmiForAge,
+  @JsonValue('Head circumference-for-age')
   headCircumferenceForAge,
-  bmirForAge,
 }
 
 enum TimeUnit {

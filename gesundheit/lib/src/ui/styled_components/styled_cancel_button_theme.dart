@@ -18,7 +18,6 @@ class StyledCancelButton extends StatelessWidget {
   Widget build(BuildContext context) => Watcher(
         (context, ref, _) {
           final theme = ref.watch(clientThemeCreator);
-          final labels = LocaleUtil().getLabels(context);
 
           return Theme(
             data: Theme.of(context).copyWith(

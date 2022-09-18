@@ -11,7 +11,8 @@ import 'events/locale_events.dart';
 import 'failures/locale_failures.dart';
 import 'state/locale_states.dart';
 
-final localeCreator = Creator((ref) => LocaleStates.initial());
+final Creator<LocaleStates> localeCreator =
+    Creator((ref) => LocaleStates.initial());
 
 final localeEventsCreator =
     Creator.arg1((ref, LocaleEvents events) => events.map(

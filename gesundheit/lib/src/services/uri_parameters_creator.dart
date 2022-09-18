@@ -1,3 +1,3 @@
 import 'package:creator/creator.dart';
 
-final uriParametersCreator = Creator((ref) => Uri());
+final Creator<Uri> uriParametersCreator = Creator((ref) => Uri());

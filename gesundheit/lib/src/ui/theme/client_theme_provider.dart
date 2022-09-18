@@ -7,7 +7,8 @@ import 'package:package_info_plus/package_info_plus.dart';
 
 import '../../gesundheit.dart';
 
-final clientThemeCreator = Creator((ref) => ClientThemeState.initial());
+final Creator<ClientThemeState> clientThemeCreator =
+    Creator((ref) => ClientThemeState.initial());
 
 final themeEventsCreator = Emitter.arg1<bool, ClientThemeEvents>((ref,
         ClientThemeEvents events, emit) async =>

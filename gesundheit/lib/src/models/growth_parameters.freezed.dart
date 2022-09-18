@@ -165,8 +165,16 @@ GrowthParameters _$GrowthParametersFromJson(Map<String, dynamic> json) {
 mixin _$GrowthParameters {
   GrowthMeasure get growthMeasure => throw _privateConstructorUsedError;
   TimeUnit get timeUnit => throw _privateConstructorUsedError;
-  Map<String, ZScoreValues> get scoreForAge =>
-      throw _privateConstructorUsedError;
+  UnitMeasure get unitMeasure => throw _privateConstructorUsedError;
+  Map<String, num> get sd4 => throw _privateConstructorUsedError;
+  Map<String, num> get sd3 => throw _privateConstructorUsedError;
+  Map<String, num> get sd2 => throw _privateConstructorUsedError;
+  Map<String, num> get sd1 => throw _privateConstructorUsedError;
+  Map<String, num> get sd0 => throw _privateConstructorUsedError;
+  Map<String, num> get sd1neg => throw _privateConstructorUsedError;
+  Map<String, num> get sd2neg => throw _privateConstructorUsedError;
+  Map<String, num> get sd3neg => throw _privateConstructorUsedError;
+  Map<String, num> get sd4neg => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -182,7 +190,16 @@ abstract class $GrowthParametersCopyWith<$Res> {
   $Res call(
       {GrowthMeasure growthMeasure,
       TimeUnit timeUnit,
-      Map<String, ZScoreValues> scoreForAge});
+      UnitMeasure unitMeasure,
+      Map<String, num> sd4,
+      Map<String, num> sd3,
+      Map<String, num> sd2,
+      Map<String, num> sd1,
+      Map<String, num> sd0,
+      Map<String, num> sd1neg,
+      Map<String, num> sd2neg,
+      Map<String, num> sd3neg,
+      Map<String, num> sd4neg});
 }
 
 /// @nodoc
@@ -198,7 +215,16 @@ class _$GrowthParametersCopyWithImpl<$Res>
   $Res call({
     Object? growthMeasure = freezed,
     Object? timeUnit = freezed,
-    Object? scoreForAge = freezed,
+    Object? unitMeasure = freezed,
+    Object? sd4 = freezed,
+    Object? sd3 = freezed,
+    Object? sd2 = freezed,
+    Object? sd1 = freezed,
+    Object? sd0 = freezed,
+    Object? sd1neg = freezed,
+    Object? sd2neg = freezed,
+    Object? sd3neg = freezed,
+    Object? sd4neg = freezed,
   }) {
     return _then(_value.copyWith(
       growthMeasure: growthMeasure == freezed
@@ -209,10 +235,46 @@ class _$GrowthParametersCopyWithImpl<$Res>
           ? _value.timeUnit
           : timeUnit // ignore: cast_nullable_to_non_nullable
               as TimeUnit,
-      scoreForAge: scoreForAge == freezed
-          ? _value.scoreForAge
-          : scoreForAge // ignore: cast_nullable_to_non_nullable
-              as Map<String, ZScoreValues>,
+      unitMeasure: unitMeasure == freezed
+          ? _value.unitMeasure
+          : unitMeasure // ignore: cast_nullable_to_non_nullable
+              as UnitMeasure,
+      sd4: sd4 == freezed
+          ? _value.sd4
+          : sd4 // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd3: sd3 == freezed
+          ? _value.sd3
+          : sd3 // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd2: sd2 == freezed
+          ? _value.sd2
+          : sd2 // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd1: sd1 == freezed
+          ? _value.sd1
+          : sd1 // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd0: sd0 == freezed
+          ? _value.sd0
+          : sd0 // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd1neg: sd1neg == freezed
+          ? _value.sd1neg
+          : sd1neg // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd2neg: sd2neg == freezed
+          ? _value.sd2neg
+          : sd2neg // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd3neg: sd3neg == freezed
+          ? _value.sd3neg
+          : sd3neg // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd4neg: sd4neg == freezed
+          ? _value.sd4neg
+          : sd4neg // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
     ));
   }
 }
@@ -227,7 +289,16 @@ abstract class _$$_GrowthParametersCopyWith<$Res>
   $Res call(
       {GrowthMeasure growthMeasure,
       TimeUnit timeUnit,
-      Map<String, ZScoreValues> scoreForAge});
+      UnitMeasure unitMeasure,
+      Map<String, num> sd4,
+      Map<String, num> sd3,
+      Map<String, num> sd2,
+      Map<String, num> sd1,
+      Map<String, num> sd0,
+      Map<String, num> sd1neg,
+      Map<String, num> sd2neg,
+      Map<String, num> sd3neg,
+      Map<String, num> sd4neg});
 }
 
 /// @nodoc
@@ -245,7 +316,16 @@ class __$$_GrowthParametersCopyWithImpl<$Res>
   $Res call({
     Object? growthMeasure = freezed,
     Object? timeUnit = freezed,
-    Object? scoreForAge = freezed,
+    Object? unitMeasure = freezed,
+    Object? sd4 = freezed,
+    Object? sd3 = freezed,
+    Object? sd2 = freezed,
+    Object? sd1 = freezed,
+    Object? sd0 = freezed,
+    Object? sd1neg = freezed,
+    Object? sd2neg = freezed,
+    Object? sd3neg = freezed,
+    Object? sd4neg = freezed,
   }) {
     return _then(_$_GrowthParameters(
       growthMeasure: growthMeasure == freezed
@@ -256,10 +336,46 @@ class __$$_GrowthParametersCopyWithImpl<$Res>
           ? _value.timeUnit
           : timeUnit // ignore: cast_nullable_to_non_nullable
               as TimeUnit,
-      scoreForAge: scoreForAge == freezed
-          ? _value._scoreForAge
-          : scoreForAge // ignore: cast_nullable_to_non_nullable
-              as Map<String, ZScoreValues>,
+      unitMeasure: unitMeasure == freezed
+          ? _value.unitMeasure
+          : unitMeasure // ignore: cast_nullable_to_non_nullable
+              as UnitMeasure,
+      sd4: sd4 == freezed
+          ? _value._sd4
+          : sd4 // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd3: sd3 == freezed
+          ? _value._sd3
+          : sd3 // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd2: sd2 == freezed
+          ? _value._sd2
+          : sd2 // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd1: sd1 == freezed
+          ? _value._sd1
+          : sd1 // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd0: sd0 == freezed
+          ? _value._sd0
+          : sd0 // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd1neg: sd1neg == freezed
+          ? _value._sd1neg
+          : sd1neg // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd2neg: sd2neg == freezed
+          ? _value._sd2neg
+          : sd2neg // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd3neg: sd3neg == freezed
+          ? _value._sd3neg
+          : sd3neg // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
+      sd4neg: sd4neg == freezed
+          ? _value._sd4neg
+          : sd4neg // ignore: cast_nullable_to_non_nullable
+              as Map<String, num>,
     ));
   }
 }
@@ -270,9 +386,25 @@ class _$_GrowthParameters implements _GrowthParameters {
   const _$_GrowthParameters(
       {required this.growthMeasure,
       required this.timeUnit,
-      final Map<String, ZScoreValues> scoreForAge =
-          const <String, ZScoreValues>{}})
-      : _scoreForAge = scoreForAge;
+      required this.unitMeasure,
+      final Map<String, num> sd4 = const {},
+      final Map<String, num> sd3 = const {},
+      final Map<String, num> sd2 = const {},
+      final Map<String, num> sd1 = const {},
+      final Map<String, num> sd0 = const {},
+      final Map<String, num> sd1neg = const {},
+      final Map<String, num> sd2neg = const {},
+      final Map<String, num> sd3neg = const {},
+      final Map<String, num> sd4neg = const {}})
+      : _sd4 = sd4,
+        _sd3 = sd3,
+        _sd2 = sd2,
+        _sd1 = sd1,
+        _sd0 = sd0,
+        _sd1neg = sd1neg,
+        _sd2neg = sd2neg,
+        _sd3neg = sd3neg,
+        _sd4neg = sd4neg;
 
   factory _$_GrowthParameters.fromJson(Map<String, dynamic> json) =>
       _$$_GrowthParametersFromJson(json);
@@ -281,17 +413,83 @@ class _$_GrowthParameters implements _GrowthParameters {
   final GrowthMeasure growthMeasure;
   @override
   final TimeUnit timeUnit;
-  final Map<String, ZScoreValues> _scoreForAge;
+  @override
+  final UnitMeasure unitMeasure;
+  final Map<String, num> _sd4;
   @override
   @JsonKey()
-  Map<String, ZScoreValues> get scoreForAge {
+  Map<String, num> get sd4 {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_scoreForAge);
+    return EqualUnmodifiableMapView(_sd4);
+  }
+
+  final Map<String, num> _sd3;
+  @override
+  @JsonKey()
+  Map<String, num> get sd3 {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_sd3);
+  }
+
+  final Map<String, num> _sd2;
+  @override
+  @JsonKey()
+  Map<String, num> get sd2 {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_sd2);
+  }
+
+  final Map<String, num> _sd1;
+  @override
+  @JsonKey()
+  Map<String, num> get sd1 {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_sd1);
+  }
+
+  final Map<String, num> _sd0;
+  @override
+  @JsonKey()
+  Map<String, num> get sd0 {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_sd0);
+  }
+
+  final Map<String, num> _sd1neg;
+  @override
+  @JsonKey()
+  Map<String, num> get sd1neg {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_sd1neg);
+  }
+
+  final Map<String, num> _sd2neg;
+  @override
+  @JsonKey()
+  Map<String, num> get sd2neg {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_sd2neg);
+  }
+
+  final Map<String, num> _sd3neg;
+  @override
+  @JsonKey()
+  Map<String, num> get sd3neg {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_sd3neg);
+  }
+
+  final Map<String, num> _sd4neg;
+  @override
+  @JsonKey()
+  Map<String, num> get sd4neg {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_sd4neg);
   }
 
   @override
   String toString() {
-    return 'GrowthParameters(growthMeasure: $growthMeasure, timeUnit: $timeUnit, scoreForAge: $scoreForAge)';
+    return 'GrowthParameters(growthMeasure: $growthMeasure, timeUnit: $timeUnit, unitMeasure: $unitMeasure, sd4: $sd4, sd3: $sd3, sd2: $sd2, sd1: $sd1, sd0: $sd0, sd1neg: $sd1neg, sd2neg: $sd2neg, sd3neg: $sd3neg, sd4neg: $sd4neg)';
   }
 
   @override
@@ -303,7 +501,16 @@ class _$_GrowthParameters implements _GrowthParameters {
                 .equals(other.growthMeasure, growthMeasure) &&
             const DeepCollectionEquality().equals(other.timeUnit, timeUnit) &&
             const DeepCollectionEquality()
-                .equals(other._scoreForAge, _scoreForAge));
+                .equals(other.unitMeasure, unitMeasure) &&
+            const DeepCollectionEquality().equals(other._sd4, _sd4) &&
+            const DeepCollectionEquality().equals(other._sd3, _sd3) &&
+            const DeepCollectionEquality().equals(other._sd2, _sd2) &&
+            const DeepCollectionEquality().equals(other._sd1, _sd1) &&
+            const DeepCollectionEquality().equals(other._sd0, _sd0) &&
+            const DeepCollectionEquality().equals(other._sd1neg, _sd1neg) &&
+            const DeepCollectionEquality().equals(other._sd2neg, _sd2neg) &&
+            const DeepCollectionEquality().equals(other._sd3neg, _sd3neg) &&
+            const DeepCollectionEquality().equals(other._sd4neg, _sd4neg));
   }
 
   @JsonKey(ignore: true)
@@ -312,7 +519,16 @@ class _$_GrowthParameters implements _GrowthParameters {
       runtimeType,
       const DeepCollectionEquality().hash(growthMeasure),
       const DeepCollectionEquality().hash(timeUnit),
-      const DeepCollectionEquality().hash(_scoreForAge));
+      const DeepCollectionEquality().hash(unitMeasure),
+      const DeepCollectionEquality().hash(_sd4),
+      const DeepCollectionEquality().hash(_sd3),
+      const DeepCollectionEquality().hash(_sd2),
+      const DeepCollectionEquality().hash(_sd1),
+      const DeepCollectionEquality().hash(_sd0),
+      const DeepCollectionEquality().hash(_sd1neg),
+      const DeepCollectionEquality().hash(_sd2neg),
+      const DeepCollectionEquality().hash(_sd3neg),
+      const DeepCollectionEquality().hash(_sd4neg));
 
   @JsonKey(ignore: true)
   @override
@@ -331,7 +547,16 @@ abstract class _GrowthParameters implements GrowthParameters {
   const factory _GrowthParameters(
       {required final GrowthMeasure growthMeasure,
       required final TimeUnit timeUnit,
-      final Map<String, ZScoreValues> scoreForAge}) = _$_GrowthParameters;
+      required final UnitMeasure unitMeasure,
+      final Map<String, num> sd4,
+      final Map<String, num> sd3,
+      final Map<String, num> sd2,
+      final Map<String, num> sd1,
+      final Map<String, num> sd0,
+      final Map<String, num> sd1neg,
+      final Map<String, num> sd2neg,
+      final Map<String, num> sd3neg,
+      final Map<String, num> sd4neg}) = _$_GrowthParameters;
 
   factory _GrowthParameters.fromJson(Map<String, dynamic> json) =
       _$_GrowthParameters.fromJson;
@@ -341,151 +566,27 @@ abstract class _GrowthParameters implements GrowthParameters {
   @override
   TimeUnit get timeUnit;
   @override
-  Map<String, ZScoreValues> get scoreForAge;
+  UnitMeasure get unitMeasure;
+  @override
+  Map<String, num> get sd4;
+  @override
+  Map<String, num> get sd3;
+  @override
+  Map<String, num> get sd2;
+  @override
+  Map<String, num> get sd1;
+  @override
+  Map<String, num> get sd0;
+  @override
+  Map<String, num> get sd1neg;
+  @override
+  Map<String, num> get sd2neg;
+  @override
+  Map<String, num> get sd3neg;
+  @override
+  Map<String, num> get sd4neg;
   @override
   @JsonKey(ignore: true)
   _$$_GrowthParametersCopyWith<_$_GrowthParameters> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-ZScoreValues _$ZScoreValuesFromJson(Map<String, dynamic> json) {
-  return _ZScoreValues.fromJson(json);
-}
-
-/// @nodoc
-mixin _$ZScoreValues {
-  Map<String, String> get zScoreValues => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $ZScoreValuesCopyWith<ZScoreValues> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ZScoreValuesCopyWith<$Res> {
-  factory $ZScoreValuesCopyWith(
-          ZScoreValues value, $Res Function(ZScoreValues) then) =
-      _$ZScoreValuesCopyWithImpl<$Res>;
-  $Res call({Map<String, String> zScoreValues});
-}
-
-/// @nodoc
-class _$ZScoreValuesCopyWithImpl<$Res> implements $ZScoreValuesCopyWith<$Res> {
-  _$ZScoreValuesCopyWithImpl(this._value, this._then);
-
-  final ZScoreValues _value;
-  // ignore: unused_field
-  final $Res Function(ZScoreValues) _then;
-
-  @override
-  $Res call({
-    Object? zScoreValues = freezed,
-  }) {
-    return _then(_value.copyWith(
-      zScoreValues: zScoreValues == freezed
-          ? _value.zScoreValues
-          : zScoreValues // ignore: cast_nullable_to_non_nullable
-              as Map<String, String>,
-    ));
-  }
-}
-
-/// @nodoc
-abstract class _$$_ZScoreValuesCopyWith<$Res>
-    implements $ZScoreValuesCopyWith<$Res> {
-  factory _$$_ZScoreValuesCopyWith(
-          _$_ZScoreValues value, $Res Function(_$_ZScoreValues) then) =
-      __$$_ZScoreValuesCopyWithImpl<$Res>;
-  @override
-  $Res call({Map<String, String> zScoreValues});
-}
-
-/// @nodoc
-class __$$_ZScoreValuesCopyWithImpl<$Res>
-    extends _$ZScoreValuesCopyWithImpl<$Res>
-    implements _$$_ZScoreValuesCopyWith<$Res> {
-  __$$_ZScoreValuesCopyWithImpl(
-      _$_ZScoreValues _value, $Res Function(_$_ZScoreValues) _then)
-      : super(_value, (v) => _then(v as _$_ZScoreValues));
-
-  @override
-  _$_ZScoreValues get _value => super._value as _$_ZScoreValues;
-
-  @override
-  $Res call({
-    Object? zScoreValues = freezed,
-  }) {
-    return _then(_$_ZScoreValues(
-      zScoreValues: zScoreValues == freezed
-          ? _value._zScoreValues
-          : zScoreValues // ignore: cast_nullable_to_non_nullable
-              as Map<String, String>,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_ZScoreValues implements _ZScoreValues {
-  const _$_ZScoreValues(
-      {final Map<String, String> zScoreValues = const <String, String>{}})
-      : _zScoreValues = zScoreValues;
-
-  factory _$_ZScoreValues.fromJson(Map<String, dynamic> json) =>
-      _$$_ZScoreValuesFromJson(json);
-
-  final Map<String, String> _zScoreValues;
-  @override
-  @JsonKey()
-  Map<String, String> get zScoreValues {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_zScoreValues);
-  }
-
-  @override
-  String toString() {
-    return 'ZScoreValues(zScoreValues: $zScoreValues)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ZScoreValues &&
-            const DeepCollectionEquality()
-                .equals(other._zScoreValues, _zScoreValues));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(_zScoreValues));
-
-  @JsonKey(ignore: true)
-  @override
-  _$$_ZScoreValuesCopyWith<_$_ZScoreValues> get copyWith =>
-      __$$_ZScoreValuesCopyWithImpl<_$_ZScoreValues>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_ZScoreValuesToJson(
-      this,
-    );
-  }
-}
-
-abstract class _ZScoreValues implements ZScoreValues {
-  const factory _ZScoreValues({final Map<String, String> zScoreValues}) =
-      _$_ZScoreValues;
-
-  factory _ZScoreValues.fromJson(Map<String, dynamic> json) =
-      _$_ZScoreValues.fromJson;
-
-  @override
-  Map<String, String> get zScoreValues;
-  @override
-  @JsonKey(ignore: true)
-  _$$_ZScoreValuesCopyWith<_$_ZScoreValues> get copyWith =>
       throw _privateConstructorUsedError;
 }

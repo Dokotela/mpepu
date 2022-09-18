@@ -16,7 +16,7 @@ class LoginView extends StatelessWidget {
               logo: AssetImage(clientAssets.clientImages.logo),
               onLogin: (_) {
                 try {
-                  LoginRoute().go(context);
+                  HomeRoute().go(context);
                 } catch (e, stack) {
                   print(e);
                   print(stack);
