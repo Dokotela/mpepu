@@ -34,9 +34,28 @@ class LoginView extends StatelessWidget {
             body: Center(
                 child: ElevatedButton(
               onPressed: () {
+                HomeRoute().go(context);
+              },
+              child: const Text('This is the LoginView, go to the HomeView'),
+            )),
+          ),
+        ),
+      );
+}
+
+class HomeView extends StatelessWidget {
+  const HomeView({super.key});
+
+  @override
+  Widget build(BuildContext context) => MaterialApp(
+        home: SafeArea(
+          child: Scaffold(
+            body: Center(
+                child: ElevatedButton(
+              onPressed: () {
                 TempRoute().go(context);
               },
-              child: const Text('This is the LoginView, go to the TempView'),
+              child: const Text('This is HomeView, go to TempView'),
             )),
           ),
         ),
@@ -56,23 +75,6 @@ class TempView extends StatelessWidget {
                 LoginRoute().go(context);
               },
               child: const Text('This is the TempView, go to the LoginView'),
-            )),
-          ),
-        ),
-      );
-}
-
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
-
-  @override
-  Widget build(BuildContext context) => MaterialApp(
-        home: SafeArea(
-          child: Scaffold(
-            body: Center(
-                child: ElevatedButton(
-              onPressed: () {},
-              child: const Text('You have somehow made it to HomeView'),
             )),
           ),
         ),
