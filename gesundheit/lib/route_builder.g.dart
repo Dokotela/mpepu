@@ -9,8 +9,7 @@ part of 'route_builder.dart';
 List<GoRoute> get $appRoutes => [
       $loginRoute,
       $homeRoute,
-      $growthRoute,
-      $demoRoute,
+      $tempRoute,
     ];
 
 GoRoute get $loginRoute => GoRouteData.$route(
@@ -47,35 +46,16 @@ extension $HomeRouteExtension on HomeRoute {
   void push(BuildContext context) => context.push(location, extra: this);
 }
 
-GoRoute get $growthRoute => GoRouteData.$route(
-      path: '/growth',
-      factory: $GrowthRouteExtension._fromState,
+GoRoute get $tempRoute => GoRouteData.$route(
+      path: '/temp',
+      factory: $TempRouteExtension._fromState,
     );
 
-extension $GrowthRouteExtension on GrowthRoute {
-  static GrowthRoute _fromState(GoRouterState state) => GrowthRoute();
+extension $TempRouteExtension on TempRoute {
+  static TempRoute _fromState(GoRouterState state) => TempRoute();
 
   String get location => GoRouteData.$location(
-        '/growth',
-      );
-
-  void go(BuildContext context) => context.go(location, extra: this);
-
-  void push(BuildContext context) => context.push(location, extra: this);
-}
-
-GoRoute get $demoRoute => GoRouteData.$route(
-      path: '/demo/:demoNumber',
-      factory: $DemoRouteExtension._fromState,
-    );
-
-extension $DemoRouteExtension on DemoRoute {
-  static DemoRoute _fromState(GoRouterState state) => DemoRoute(
-        int.parse(state.params['demoNumber']!),
-      );
-
-  String get location => GoRouteData.$location(
-        '/demo/${Uri.encodeComponent(demoNumber.toString())}',
+        '/temp',
       );
 
   void go(BuildContext context) => context.go(location, extra: this);

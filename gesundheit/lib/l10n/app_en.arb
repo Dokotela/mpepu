@@ -1,7 +1,0 @@
-{
-    "@@locale": "en",
-    "a1languageInEnglish": "English",
-    "@a1languageInEnglish": {
-        "description": "This is the English title for each language"
-    }
-}
