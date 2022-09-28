@@ -17,16 +17,16 @@ part 'route_builder.g.dart';
 /// spec: https://gorouter.dev/redirection
 /// also: https://github.com/csells/go_router/blob/main/go_router/example/lib/redirection.dart
 ///
-final setupGoRouterCreator = GoRouter(
-  initialLocation: '/login',
-  debugLogDiagnostics: !isProd,
-  restorationScopeId: 'root',
-  // refreshListenable: ref.watch(isLoggedInEmitter),
-  // redirect: (state) => true ? HomeRoute().location : LoginRoute().location,
-  routes: $appRoutes,
-  errorBuilder: (c, s) =>
-      ErrorRoute(s.error ?? const RouteFailuresUnspecifiedError()).build(c),
-);
+final setupGoRouterCreator = Creator((ref) => GoRouter(
+      initialLocation: '/login',
+      debugLogDiagnostics: !isProd,
+      restorationScopeId: 'root',
+      // refreshListenable: ref.watch(isLoggedInEmitter),
+      // redirect: (state) => true ? HomeRoute().location : LoginRoute().location,
+      routes: $appRoutes,
+      errorBuilder: (c, s) =>
+          ErrorRoute(s.error ?? const RouteFailuresUnspecifiedError()).build(c),
+    ));
 
 /// ********** ********** *********** *********** **********
 /// *********** ROUTING / INHERITANCE FOR: LOGIN ***********
@@ -65,6 +65,19 @@ class HomeRoute extends GoRouteData {
 class GrowthRoute extends GoRouteData {
   @override
   Widget build(BuildContext context) => GrowthChartView();
+}
+
+/// ********** ********** *********** *********** **********
+/// *********** ROUTING / INHERITANCE FOR: GROWTH  ***********
+/// ********** ********** *********** *********** **********
+
+/// Path for logging in and confirming via one-time passcode
+@TypedGoRoute<ScheduleRoute>(path: '/schedule')
+
+///  HOME ROUTE ***********
+class ScheduleRoute extends GoRouteData {
+  @override
+  Widget build(BuildContext context) => ScheduleView();
 }
 
 /// ********** ********** *********** *********** **********

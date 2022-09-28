@@ -24,7 +24,9 @@ class NavigationDrawer extends StatelessWidget {
               child: ElevatedButton.icon(
                 icon: const Icon(Icons.home),
                 label: const Text('Home'),
-                onPressed: () {},
+                onPressed: () {
+                  HomeRoute().go(context);
+                },
               ),
             ),
             const Gap(8),
@@ -33,7 +35,9 @@ class NavigationDrawer extends StatelessWidget {
               child: ElevatedButton.icon(
                 icon: const Icon(Icons.calendar_month),
                 label: const Text('Schedule'),
-                onPressed: () {},
+                onPressed: () {
+                  ScheduleRoute().go(context);
+                },
               ),
             ),
             const Gap(8),

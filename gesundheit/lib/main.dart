@@ -2,7 +2,6 @@ import 'package:creator/creator.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:go_router/go_router.dart';
 import 'client_assets/client_assets.dart';
 import 'gesundheit.dart';
 
@@ -40,8 +39,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Watcher((context, ref, child) {
-      // final GoRouter goRouter = ref.watch(setupGoRouterCreator);
-      // print(goRouter == null);
+      final goRouter = ref.watch(setupGoRouterCreator);
       context.ref.update(uriParametersCreator, (p0) => base);
       ref.read(themeEventsCreator(const ClientThemeEvents.setFirstLoadInfo()));
       ref.read(themeEventsCreator(const ClientThemeEvents.loadLastTheme()));
@@ -77,16 +75,14 @@ class MyApp extends StatelessWidget {
         themeMode: theme.themeMode,
 
         // *** ROUTES ***
-        restorationScopeId: 'root',
-        routeInformationParser: setupGoRouterCreator.routeInformationParser,
-        routerDelegate: setupGoRouterCreator.routerDelegate,
-        routeInformationProvider: setupGoRouterCreator.routeInformationProvider,
+        // restorationScopeId: 'root',
+        routeInformationParser: goRouter.routeInformationParser,
+        routerDelegate: goRouter.routerDelegate,
+        routeInformationProvider: goRouter.routeInformationProvider,
 
         // *** LOCALES ***
         localizationsDelegates: const [
           ...AppLocalizations.localizationsDelegates,
-          // custom material localization for haitan creole
-          // HtMaterialLocalizations.delegate
         ],
         supportedLocales: const [
           ...AppLocalizations.supportedLocales,

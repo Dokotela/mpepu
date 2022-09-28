@@ -1,4 +1,4 @@
-export 'calendar/calendar.dart';
+export 'schedule/schedule_view.dart';
 export 'communication/communication.dart';
 export 'demo/demo.dart';
 export 'growth/growth.dart';

@@ -10,6 +10,7 @@ List<GoRoute> get $appRoutes => [
       $loginRoute,
       $homeRoute,
       $growthRoute,
+      $scheduleRoute,
       $demoRoute,
     ];
 
@@ -57,6 +58,23 @@ extension $GrowthRouteExtension on GrowthRoute {
 
   String get location => GoRouteData.$location(
         '/growth',
+      );
+
+  void go(BuildContext context) => context.go(location, extra: this);
+
+  void push(BuildContext context) => context.push(location, extra: this);
+}
+
+GoRoute get $scheduleRoute => GoRouteData.$route(
+      path: '/schedule',
+      factory: $ScheduleRouteExtension._fromState,
+    );
+
+extension $ScheduleRouteExtension on ScheduleRoute {
+  static ScheduleRoute _fromState(GoRouterState state) => ScheduleRoute();
+
+  String get location => GoRouteData.$location(
+        '/schedule',
       );
 
   void go(BuildContext context) => context.go(location, extra: this);

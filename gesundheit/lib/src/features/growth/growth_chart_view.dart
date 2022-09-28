@@ -106,6 +106,7 @@ class GrowthChartView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Standard Growth Charts'),
       ),
+      drawer: const NavigationDrawer(),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Center(
