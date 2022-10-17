@@ -8,6 +8,7 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    /// Some sizing information
     final width = (MediaQuery.of(context).size.width > mobileBreakPointWidth
             ? mobileBreakPointWidth
             : double.infinity)

@@ -10,7 +10,6 @@ class LoginView extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
         home: SafeArea(
           child: Scaffold(
-            drawer: const NavigationDrawer(),
             body: FlutterLogin(
               title: clientAssets.clientApis.clientAppTitle,
               logo: AssetImage(clientAssets.clientImages.logo),
@@ -23,6 +22,7 @@ class LoginView extends StatelessWidget {
               },
               onSubmitAnimationCompleted: () {},
               onRecoverPassword: (_) => null,
+              disableCustomPageTransformer: true,
             ),
           ),
         ),
